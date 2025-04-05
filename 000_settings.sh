@@ -1,18 +1,18 @@
 #!/bin/bash
 
-#Number of project largest selected for pipeline cleanup
+#Number of project largest selected for pipeline cleanup.
 
 export Number_Projects=1000
 
-#Age of creation of pipelines to preserve, in case 14 days
+#Age of creation of pipelines to preserve, in case 14 days.
 
 export UPDATED_BEFORE=$(date -d "$date -14 days" +"%Y-%m-%dT00:00:00")
 
-#URL of Gitlab
+#URL of Gitlab.
 
-export GIT_API=https://your_gitlab.domain/api/v4
+export GIT_API=https://gitlab-your.domain/api/v4
 
-#  GIT_TOKEN,  with admin rights
+#  GIT_TOKEN,  with admin permissions.
 
 export GIT_TOKEN=glpat-xxxxxxxxxxxxxxxxx
 
