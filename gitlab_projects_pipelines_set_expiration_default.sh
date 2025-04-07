@@ -44,7 +44,7 @@ do
      if [ "$archived" != "true" ]; then
   
         #  Days in seconds -> 60×60×24×14=1209600 -> should be in seconds 
-        curl --request PUT --header "PRIVATE-TOKEN: $GIT_TOKEN" --url "$GIT_API/projects/$idProject" --data "ci_delete_pipelines_in_seconds=$Days_in_seconds"
+        curl --request PUT --header "PRIVATE-TOKEN: $GIT_TOKEN" --url "$GIT_API/projects/$idProject" --data "ci_delete_pipelines_in_seconds=$Days_in_Seconds"
         
 	cat project_statistics.txt | jq -r '[.id, .name, .ci_delete_pipelines_in_seconds] | @csv' >> project_statistics.pipeline_expiration_default.csv
      fi
