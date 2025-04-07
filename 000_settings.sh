@@ -16,6 +16,11 @@ export GIT_API=https://gitlab-your.domain/api/v4
 
 export GIT_TOKEN=glpat-xxxxxxxxxxxxxxxxx
 
+#  Days in seconds -> 60s × 60m x 24h × 14(days)=1209600 -> should be in seconds 
+
+Days_in_Seconds=1209600 # 14 days
+
+
 if [ ! "$BASH_VERSION" ] ; then
 	echo "Please do not use sh to run this script. ($0), use bash $0" 1>&2
     exit 1
