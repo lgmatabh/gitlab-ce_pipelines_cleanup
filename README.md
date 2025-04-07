@@ -54,5 +54,5 @@ If activated, all the procedures will be recorded in the file: All_logfile.log.
 
 ## Extra, Gitlab versions >= 17.9: Configure all projects with pipeline default lifetime.
 
-   1) Change the value of Days_in_Seconds of pipeline lifetime in 000_setting.sh file
+   1) Change the value of Days_in_Seconds of pipeline lifetime in 000_settings.sh file
    2) Execute the script: **bash gitlab_projects_pipelines_set_expiration_default.sh**
